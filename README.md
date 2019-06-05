@@ -1,7 +1,7 @@
 # Task-tracker
   .The sever runs on port 8000
 
-## installing dependencies.
+## Installing Dependencies.
   run npm install
   
 ## Running the server on the browser.
