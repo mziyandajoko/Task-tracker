@@ -1,0 +1,11 @@
+{
+  "name": "basic_node-server",
+  "version": "1.0.0",
+  "description": "Here is the basic Node server I will use for somw of my little projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Joko Mziyanda",
+  "license": "ISC"
+}
