@@ -4,8 +4,24 @@
   "description": "Here is the basic Node server I will use for somw of my little projects",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node server.js"
   },
   "author": "Joko Mziyanda",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mziyandajoko/Task-tracker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/mziyandajoko/Task-tracker/issues"
+  },
+  "homepage": "https://github.com/mziyandajoko/Task-tracker#readme"
 }

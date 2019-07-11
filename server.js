@@ -1,23 +1,25 @@
-const http = require('http');
+const express = require('express');
 const file_system = require('fs');
-const port = 8000;
+const app = express();
+const port = 3000;
+
+app.set('view engine', 'ejs');
+// spinning the server on port 8000
+app.listen(port);
+
+//handling static files
+
+app.use('/assets', express.static('assets'));
 
 //handling the server
-function onRequest(req, res){
-  res.writeHead(200,{'Content-Type':'text/html'});
-  file_system.readFile('./index.html',null, function(error, data){
+app.get('/' , function(req, res){
+  res.render('index');
 
-    if (error){
-      res.writeHead(404);
-      res.writeHead('Page not found !');
-    }else {
-      res.write(data);
-    }
-    res.end();
-  });
-}
+});
+
+app.get('contact' , function(req, res){
+  res.render('contact');
+
+});
+
 console.log('server is running on port ' + port);
-
-// calling the onRequest function to spin the server on port 8000
-
-http.createServer(onRequest).listen(port);
