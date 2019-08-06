@@ -1,12 +1,8 @@
-var firebase = require('firebase');
-var firebaseConfig = {
+const firebase = require('firebase');
+const firebaseConfig = {
   apiKey: "AIzaSyBUgOKlT5Z9nKM0LGUyjVt-SFLIxiSyMME",
-  authDomain: "mziyandajoko-e806b.firebaseapp.com",
-  databaseURL: "https://project-id.firebaseio.com",
+  databaseURL: "https://mziyandajoko-e806b.firebaseio.com",
   projectId: "mziyandajoko-e806b",
-  storageBucket: "mziyandajoko-e806b.appspot.com",
-  messagingSenderId: "899678547167",
-  appID: "app-id",
 };
 
 //refrencing message collrction
