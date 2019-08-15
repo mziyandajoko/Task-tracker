@@ -31,3 +31,6 @@ app.get('/profile' , function(req, res){
 });
 
 console.log('server is running on port ' + port);
+
+
+// form validation
