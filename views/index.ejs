@@ -3,33 +3,17 @@
   <head>
     <% include partials/header.ejs %>
   </head>
-  <body class="home_page" style="background-image: url('./assets/images/farmlands.jpeg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+  <body>
     <% include partials/menu.ejs %>
 
     <div class="container">
       <div class="header_text">
-               <h1>Hello my name is mziyanda Joko </h1>
+               <h1>Hello my name Is Mziyanda Joko </h1>
                <p>I am a junior front-end developer, with a 3 years of expeirance</p>
       </div>
-
-       <div class="column">
-         <ul class="social_links">
-           <li>
-             <a href="#"><img src="/assets/images/linkedin.svg" alt="">LinkedIn</a>
-           </li>
-           <li>
-             <a href="#"><img src="/assets/images/github.svg" alt="Github">Github</a>
-           </li>
-           <li>
-             <a href="#"><img src="/assets/images/hackerrank.svg" alt="HackerRank">HackerRank</a>
-           </li>
-           <li>
-             <a  class="facebook" href="#"><img src="/assets/images/facebook.svg" alt="Facebook">Facebook</a>
-           </li>
-         </ul>
-      </div>
-
-
+      <% include articles.ejs %>
+      <% include experiance.ejs %>
+      <% include showcase.ejs %>
     </div>
 
   <% include partials/scripts.ejs %>
